@@ -40,6 +40,35 @@
             <p class="small">Always willing to learn more.</p>
           </section>
         </div>
+        <section class="card">
+          <h2>Weekly Focus</h2>
+          <table border="1">
+            <thead>
+              <tr>
+                <td>Topic</td>
+                <td>Focus</td>
+                <td>Goal</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Websockets</td>
+                <td>Real time multi-user</td>
+                <td>Create a real-time multi-user application.</td>
+              </tr>
+              <tr>
+                <td>Design Systems</td>
+                <td>UI & UX components</td>
+                <td>Create a dedicated web design system.</td>
+              </tr>
+              <tr>
+                <td>Random topic within current stack</td>
+                <td>One Topic not comfortable with</td>
+                <td>Enhance understanding build micro project using it.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
         <section>
           <h3>Contact</h3>
           <p>
@@ -67,6 +96,15 @@
                 required
               />
               <br />
+              <label for="reason">Reason for contact:</label>
+              <br />
+              <select name="reason" id="reason">
+                <option value="">Select a reason</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="question">Question</option>
+                <option value="feedback">Feedback</option>
+              </select>
+              <br />
               <label for="message">Message:</label>
               <br />
               <textarea
@@ -75,7 +113,6 @@
                 required
               ></textarea>
             </div>
-            <br />
             <br />
             <button type="submit" class="btn">Send Message</button>
           </form>
